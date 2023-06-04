@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Terms and Conditions</title>
+  <style>
+    /* CSS styling for the terms and conditions */
+    body {
+      background-color: #DDBCD5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .terms-conditions {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .terms-conditions h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .terms-conditions p {
+      margin-bottom: 10px;
+    }
+
+    .checkbox-container {
+      margin-top: 20px;
+    }
+
+    .checkbox-label {
+      font-size: 14px;
+    }
+
+    .confirm-button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #000000;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s ease-in-out;
+      width: 120px;
+      text-align: center;
+    }
+
+    .confirm-button:hover {
+      background-color: #DDBCD5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="terms-conditions">
+      <h2>Terms and Conditions</h2>
+      <p>Please read these Terms and Conditions before using our services. By accessing or using our services, you agree to be bound by these Terms and Conditions.</p>
+      <p>1. Appointments:</p>
+        <p>Appointments are subject to availability.</p>
+        <p>Book in advance for preferred dates and arrive on time.</p>
+      <p>2. Cancellations and Rescheduling:</p>
+        <p>Notify us at least 24 hours in advance to cancel or reschedule.</p>
+        <p>Failure to provide notice may result in fees or refusal of future bookings.</p>
+        <p>We'll reschedule in case of unforeseen circumstances or salon closures.</p>
+      <p>3. Services and Pricing:</p>
+        <p>Services offered depend on availability and stylist expertise.</p>
+        <p>Prices may change without notice, and additional charges may apply.</p>
+      <p>4. Satisfaction Guarantee:</p>
+        <p>Contact us within 48 hours if unsatisfied, and we'll work to rectify the situation.</p>  
+      <p>5. Conduct and Safety:</p>
+        <p>Respectful conduct is required, and harassment or inappropriate behavior won't be tolerated.</p>  
+        <p>Disclose allergies, sensitivities, or medical conditions that may affect services.</p> 
+      <p>6. Intellectual Property:</p>
+        <p>All content on our website and social media platforms belongs to Rowena Hair Salon and is protected by copyright laws.</p>
+      <p>7. Amendments:</p>
+        <p>We may update these Terms and Conditions without notice, effective immediately.</p>    
+        <p>For questions or concerns, contact us at +63 916 470 7900 or rowena_salon@gmail.com.</p> 
+      <p>Last Updated: 02/06/2023</p> 
+        
+      <div class="checkbox-container">
+        <input type="checkbox" id="agreeCheckbox" class="checkbox-input">
+        <label for="agreeCheckbox" class="checkbox-label">I have read and agree to the terms and conditions.</label>
+      </div>
+      <a href="index.html" class="confirm-button" onclick="confirmTerms(event)">Confirm</a>
+    </div>
+  </div>
+  <script>
+    function confirmTerms(event) {
+      if (!document.getElementById("agreeCheckbox").checked) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        alert("Please read and agree to the terms and conditions before submitting the form.");
+      } else {
+        alert("Thank you for your consent. Your form submission will now be processed.");
+      }
+    }
+  </script>
+</body>
+</html>

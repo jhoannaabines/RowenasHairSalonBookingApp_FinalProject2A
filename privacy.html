@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Privacy and Policy</title>
+  <style>
+    /* CSS styling for the privacy policy */
+    body {
+      background-color: #DDBCD5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .privacy-policy {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .privacy-policy h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .privacy-policy p {
+      margin-bottom: 10px;
+    }
+
+    .checkbox-container {
+      margin-top: 20px;
+    }
+
+    .checkbox-label {
+      font-size: 14px;
+    }
+
+    .confirm-button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #000000;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s ease-in-out;
+      width: 120px;
+      text-align: center;
+    }
+
+    .confirm-button:hover {
+      background-color: #DDBCD5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="privacy-policy">
+      <h2>Privacy Policy</h2>
+      <p>This Privacy Policy explains how we collect, use, and protect your data when you visit our website or use our services. By using our website or providing your personal information, you agree to the practices described in this policy.</p>
+      <p>1. Information We Collect:</p>
+        <p>Personal Information: When you make an appointment or sign up for our services, we collect your name, contact details, and relevant information.</p>
+        <p>Payment Information: If you make a purchase or book an appointment through our website, we collect payment details securely.</p>
+        <p>Website Usage Information: We collect data about your interactions with our website to improve our services and personalize your experience.</p>
+      <p>2. Use of Collected Information:</p>
+        <p>Personal Information: We use your personal information to communicate with you, process appointments, provide support, and send updates and promotions.</p>
+        <p>Payment Information: We use secure payment gateways and don't store payment details.</p>
+        <p>Website Usage Information: We analyze this data to enhance our website, personalize your experience, and optimize marketing efforts.</p>
+      <p>3. Data Sharing and Protection:</p>
+        <p>We don't sell your personal information, but we may share it with trusted service providers who assist in our operations.</p>
+        <p>We may disclose information if required by law or to protect our rights, property, or safety.</p>
+        <p>We implement reasonable security measures but can't guarantee absolute security.</p>  
+      <p>4. Third-Party Links:</p>
+        <p>Our website may contain links to third-party websites. We aren't responsible for their privacy practices or content.</p>  
+      <p>5. Your Choices:</p>
+        <p>You can update, correct, or delete your personal information by contacting us.</p>  
+        <p>You can opt out of promotional emails by following the unsubscribe instructions.</p> 
+      <p>6. Updates to Privacy Policy:</p>
+        <p>We may update this Privacy Policy, and your continued use of our website or services signifies acceptance.</p>  
+        <p>For questions or concerns, contact us at +63 916 470 7900 or rowena_salon@gmail.com.</p> 
+      <p>Last Updated: 02/06/2023</p> 
+        
+      <div class="checkbox-container">
+        <input type="checkbox" id="agreeCheckbox" class="checkbox-input">
+        <label for="agreeCheckbox" class="checkbox-label">I have read and agree to the privacy policy.</label>
+      </div>
+      <a href="index.html" class="confirm-button" onclick="confirmPrivacy(event)">Confirm</a>
+    </div>
+  </div>
+  <script>
+    function confirmPrivacy(event) {
+      if (!document.getElementById("agreeCheckbox").checked) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        alert("Please read and agree to the privacy policy before submitting the form.");
+      } else {
+        alert("Thank you for your consent. Your form submission will now be processed.");
+      }
+    }
+  </script>
+</body>
+</html>
